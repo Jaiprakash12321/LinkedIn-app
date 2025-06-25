@@ -16,6 +16,7 @@ let server=http.createServer(app)
 export const io=new Server(server,{
     cors:({
         origin:"http://localhost:5173",
+        "https://linkedin-app-frontend-2497.onrender.com",
         credentials:true
     })
 })
@@ -23,6 +24,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin:"http://localhost:5173",
+    "https://linkedin-app-frontend-2497.onrender.com",
     credentials:true
 }))
 let port=process.env.PORT || 5000
