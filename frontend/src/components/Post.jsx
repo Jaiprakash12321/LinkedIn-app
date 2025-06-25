@@ -11,7 +11,7 @@ import { LuSendHorizontal } from "react-icons/lu";
 import {io} from "socket.io-client"
 import ConnectionButton from './ConnectionButton';
 
-let socket=io("https://linkedin-app-backend-final-deployment.onrender.com")
+let socket=io("https://linkedin-app-backend-2c5a.onrender.com")
 function Post({ id, author, like, comment, description, image,createdAt }) {
     
     let [more,setMore]=useState(false)
